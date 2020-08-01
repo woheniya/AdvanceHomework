@@ -10,5 +10,7 @@ namespace Homework_1DAL
         T Find<T>(int id) where T : BaseModel;
         List<T> Query<T>() where T : BaseModel;
         bool Insert<T>(T t) where T : BaseModel;
+        bool Update<T>(T t) where T : BaseModel;
+        bool Delete<T>(T t) where T : BaseModel;
     }
 }

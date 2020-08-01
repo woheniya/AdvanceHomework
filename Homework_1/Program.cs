@@ -46,22 +46,71 @@ namespace Homework_1
 
             //作业3.1 提供泛型的数据库实体插入
             {
-                User user = new User()
-                {
-                    Id = 1,
-                    Name = "cc",
-                    Account = "cc",
-                    Password = "cc",
-                    State = 1,
-                    UserType = 2,
-                    CreateTime = DateTime.Now,
-                    CreatorId = 1
-                };
-                sqlServer.Insert(user);
+                //User user = new User()
+                //{
+                //    Id = 1,
+                //    Name = "cc",
+                //    Account = "cc",
+                //    Password = "cc",
+                //    State = 1,
+                //    UserType = 2,
+                //    CreateTime = DateTime.Now,
+                //    CreatorId = 1
+                //};
+                //if (sqlServer.Insert(user))
+                //{
+                //    Console.WriteLine("插入成功");
+                //}
             }
 
+            //作业3.2 提供泛型的数据库实体更新
+            {
+                //User user = new User()
+                //{
+                //    Id = 1,
+                //    Name = "cc",
+                //    Account = "cc",
+                //    Password = "cc",
+                //    State = 1,
+                //    UserType = 2,
+                //    CreateTime = DateTime.Now,
+                //    CreatorId = 1
+                //};
+                //if (sqlServer.Update(user))
+                //{
+                //    Console.WriteLine("更新成功");
+                //}
+            }
+
+            //作业3.3 提供泛型的数据库实体删除
+            {
+                //User user = new User()
+                //{
+                //    Id = 1
+                //};
+                //if (sqlServer.Delete(user))
+                //{
+                //    Console.WriteLine("删除成功");
+                //}
+            }
+
+            //作业4 将数据访问层抽象，使用简单工厂+配置文件+反射的方式，来提供对数据访问层的使用
+            {
+                //IDBHelper dBHelper = SimpleFactory.CreateInstance();
+                //if (dBHelper.Delete(new User() { Id = 8 }))
+                //{
+                //    Console.WriteLine("删除成功");
+                //}
+            }
+
+            //作业5 每个实体类的基础增删改查SQL语句是不变的，用泛型缓存试试！
+            {
+                //User user1 = sqlServer.Find<User>(1);
+                //User user2 = sqlServer.Find<User>(2);
+                //List<User> userList = sqlServer.Query<User>();
+            }
         }
 
-        
+
     }
 }
